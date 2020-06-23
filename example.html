@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playground snake.js</title>
+  </head>
+
+  <body>
+    <div class="dashboard" style="width: 500px; height: 300px; border: 1px grey solid;"></div>
+    <hr>
+    <div class="gamepad">
+      <button onclick="snakeGame.moveSnake('up')">UP</button>
+      <button onclick="snakeGame.moveSnake('left')">LEFT</button>
+      <button onclick="snakeGame.moveSnake('right')">RIGHT</button>
+      <button onclick="snakeGame.moveSnake('down')">DOWN</button>
+    </div>
+    <br>
+    <button onclick="snakeGame.moveStopStart()">PAUSE/CONTINUE</button>
+
+    <script type="module" src="./index.js">
+      import 'snakeGame'
+
+      snakeGame.start()
+      document.onkeydown = function(e) { 
+        switch (e.keyCode) {
+          // Left key
+          case 37:
+            snakeGame.moveSnake('left')
+            break
+          // Up key
+          case 38:
+            snakeGame.moveSnake('up')
+            break
+          // Right key
+          case 39:
+            snakeGame.moveSnake('right')
+            break
+          // Down key
+          case 40:
+            snakeGame.moveSnake('down')
+            break
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+

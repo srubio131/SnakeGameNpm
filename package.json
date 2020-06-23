@@ -1,0 +1,18 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "Classic Snake Game Core",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srubio131/SnakeGame.git"
+  },
+  "keywords": [
+    "snake"
+  ],
+  "author": "srubio131",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
